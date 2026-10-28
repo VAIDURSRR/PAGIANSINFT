@@ -1,0 +1,27 @@
+/* Transiciones suaves para elementos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Estilo personalizado para el banner con un toque de degradado */
+.banner {
+    background: linear-gradient(135deg, #0d6efd, #0dcaf0) !important;
+}
+
+/* Control básico de las diapositivas del slider para que funcionen con tu JS */
+.diapositiva {
+    display: none;
+}
+
+.diapositiva.activa {
+    display: block;
+}
+
+/* Ajustes visuales para las tarjetas de noticias */
+.noticia-card {
+    transition: transform 0.2s ease-in-out;
+}
+
+.noticia-card:hover {
+    transform: translateY(-3px);
+}

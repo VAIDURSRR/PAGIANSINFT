@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tradiciones y costumbres · Saltillo, Coahuila</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/componentes.css">
+</head>
+<body>
+
+  <!-- BANNER ALUSIVO A LA FECHA -->
+  <div class="banner-fecha">
+    🌼 Día de Muertos · 1 y 2 de noviembre de 2026 · <span id="cuentaRegresiva"></span> 🕯️
+  </div>
+
+  <header class="encabezado">
+    <a href="index.html" class="logo">Coahuila 🕯️</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
+    <nav class="menu" id="menu">
+      <a href="index.html">Inicio</a>
+      <a href="comidas.html">Comidas típicas</a>
+      <a href="tradiciones.html">Tradiciones</a>
+      <a href="fechas.html">Fechas y etapas</a>
+      <a href="arte.html">Arte y decoración</a>
+      <a href="regionales.html">Ofrendas regionales</a>
+      <a href="leyendas.html">Leyendas y mitos</a>
+      <a href="arte-popular.html">Arte popular</a>
+    </nav>
+  </header>
+
+  
+
+  <!-- 9. BREADCRUMBS -->
+  <nav class="breadcrumbs" aria-label="Ruta de navegación">
+    <ol>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="index.html#historia">Coahuila</a></li>
+      <li aria-current="page">Tradiciones y costumbres de Saltillo</li>
+    </ol>
+  </nav>
+
+  <div class="titulo-pagina">
+    <h1>Tradiciones y costumbres</h1>
+    <p>Localidad: Saltillo · Estado: Coahuila de Zaragoza · México</p>
+  </div>
+
+  <main>
+    <!-- 2. SLIDER (3 imágenes) -->
+    <div class="slider" aria-label="Galería destacada">
+      <div class="slides">
+        <div class="slide">
+          <img src="img/slide1.svg" alt="Ofrendas en Saltillo">
+          <div class="pie-slide"><h3>Ofrendas llenas de color</h3><p>Cada familia arma su altar con cariño.</p></div>
+        </div>
+        <div class="slide">
+          <img src="img/slide2.svg" alt="Velas en el panteón">
+          <div class="pie-slide"><h3>Noche de velas</h3><p>La luz guía a las almas de regreso a casa.</p></div>
+        </div>
+        <div class="slide">
+          <img src="img/slide3.svg" alt="Pan de muerto y pan de pulque">
+          <div class="pie-slide"><h3>Sabores de la tradición</h3><p>El pan no puede faltar en la ofrenda.</p></div>
+        </div>
+      </div>
+      <button class="flecha prev" aria-label="Anterior">‹</button>
+      <button class="flecha next" aria-label="Siguiente">›</button>
+      <div class="puntos" id="puntos"></div>
+    </div>
+
+    <!-- 5. COLUMNAS CON IMAGEN Y TEXTO -->
+    <section class="seccion reveal" id="nuestra-tierra">
+      <h2>📍 Nuestra localidad</h2>
+
+      <div class="fila-img">
+        <img src="img/gal1.svg" alt="Ofrenda familiar">
+        <div class="texto">
+          <h3>Saltillo, Coahuila</h3>
+          <p>
+            Saltillo, capital de Coahuila, fue fundada en 1577 y es una ciudad donde conviven la herencia
+            indígena, la española y la tlaxcalteca. Esa mezcla se nota en sus fiestas, su comida y sus
+            artesanías.
+          </p>
+        </div>
+      </div>
+
+      <div class="fila-img invertida">
+        <img src="img/gal5.svg" alt="Sarape de Saltillo">
+        <div class="texto">
+          <h3>Costumbres que nos identifican</h3>
+          <p>
+            Entre las costumbres de la región están las fiestas religiosas, los festivales, la elaboración de
+            sarapes y la forma de recordar a los difuntos con ofrendas, flores y visitas al panteón en
+            familia.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. TABS -->
+    <section class="seccion seccion-oscura reveal" id="tradiciones">
+      <h2>📂 Tradiciones por tema</h2>
+      <div class="tabs-nav">
+        <button class="tab-btn activo" data-tab="tab1">Día de Muertos</button>
+        <button class="tab-btn" data-tab="tab2">Fiestas y religión</button>
+        <button class="tab-btn" data-tab="tab3">Artesanía y comida</button>
+      </div>
+
+      <div class="tab-panel activo" id="tab1" style="color:#2a2230">
+        <h3>Día de Muertos</h3>
+        <p>Los días 1 y 2 de noviembre las familias recuerdan a sus difuntos con ofrendas en casa y visitas al panteón.</p>
+        <ul>
+          <li>Se limpian y adornan las tumbas con flores de cempasúchil.</li>
+          <li>Se arma la ofrenda con fotos, velas, agua, sal y comida.</li>
+          <li>Las familias se reúnen a convivir y compartir el pan y la bebida.</li>
+        </ul>
+      </div>
+
+      <div class="tab-panel" id="tab2" style="color:#2a2230">
+        <h3>Fiestas y religión</h3>
+        <p>La religión católica tiene un papel muy importante en la vida de la comunidad.</p>
+        <ul>
+          <li>Las fiestas patronales reúnen a los vecinos con misas, procesiones y convivios.</li>
+          <li>Las posadas en diciembre y la Semana Santa son celebraciones muy arraigadas.</li>
+          <li>El Santo Cristo de la Capilla es una de las devociones más conocidas de Saltillo.</li>
+        </ul>
+      </div>
+
+      <div class="tab-panel" id="tab3" style="color:#2a2230">
+        <h3>Artesanía y comida</h3>
+        <p>La región es reconocida por sus productos y sabores tradicionales.</p>
+        <ul>
+          <li>El sarape de Saltillo es una de las artesanías más famosas del estado.</li>
+          <li>El pan de pulque, el cabrito y los dulces de nuez forman parte de la cocina local.</li>
+          <li>Más sabores en la página de <a href="comidas.html">Comidas típicas</a>.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 3. SISTEMA DE NOTICIAS -->
+    <section class="seccion reveal" id="noticias">
+      <h2>📰 Noticias de la temporada</h2>
+      <div class="filtros" id="filtrosNoticias"></div>
+      <div class="lista-noticias" id="listaNoticias"></div>
+    </section>
+
+    <!-- 4. CARDS (con ventanas modales) -->
+    <section class="seccion seccion-oscura reveal" id="costumbres">
+      <h2>🎴 Costumbres destacadas</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="img/gal1.svg" alt="Ofrendas">
+          <div class="cuerpo">
+            <h3>Las ofrendas</h3>
+            <p style="color:#2a2230">Altares con flores, velas y comida para recibir a los difuntos.</p>
+            <button class="btn-chico" data-modal data-titulo="Las ofrendas" data-img="img/gal1.svg"
+              data-texto="La ofrenda es un altar que se arma en casa para recordar a los seres queridos que ya fallecieron. Lleva flores de cempasúchil, velas, agua, sal, papel picado, fotos y la comida favorita del difunto.">Ver más</button>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/gal8.svg" alt="Visita al panteón">
+          <div class="cuerpo">
+            <h3>Visita al panteón</h3>
+            <p style="color:#2a2230">Las familias limpian y adornan las tumbas de sus seres queridos.</p>
+            <button class="btn-chico" data-modal data-titulo="Visita al panteón" data-img="img/gal8.svg"
+              data-texto="Muchas familias pasan el día en el panteón: limpian la tumba, la adornan con flores, encienden velas y conviven recordando anécdotas de quien ya no está.">Ver más</button>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/gal5.svg" alt="Sarape de Saltillo">
+          <div class="cuerpo">
+            <h3>El sarape de Saltillo</h3>
+            <p style="color:#2a2230">Una artesanía textil que representa a la región.</p>
+            <button class="btn-chico" data-modal data-titulo="El sarape de Saltillo" data-img="img/gal5.svg"
+              data-texto="El sarape de Saltillo es una prenda tejida con colores y diseños tradicionales. Es considerado un símbolo de la ciudad y de la cultura de Coahuila.">Ver más</button>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/gal3.svg" alt="Pan de muerto">
+          <div class="cuerpo">
+            <h3>El pan de la temporada</h3>
+            <p style="color:#2a2230">Pan de muerto y pan de pulque para compartir.</p>
+            <button class="btn-chico" data-modal data-titulo="El pan de la temporada" data-img="img/gal3.svg"
+              data-texto="En estas fechas se prepara pan de muerto para la ofrenda. En Saltillo también es muy conocido el pan de pulque, un pan tradicional de la región.">Ver más</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 10. GALERÍA CON FILTROS -->
+    <section class="seccion reveal" id="galeria-seccion">
+      <h2>🖼️ Galería</h2>
+      <div class="filtros" id="filtrosGaleria">
+        <button class="filtro activo" data-filtro="todas">Todas</button>
+        <button class="filtro" data-filtro="ofrendas">Ofrendas</button>
+        <button class="filtro" data-filtro="panteon">Panteón</button>
+        <button class="filtro" data-filtro="comida">Comida</button>
+        <button class="filtro" data-filtro="artesanias">Artesanías</button>
+      </div>
+      <div class="galeria" id="galeria">
+        <figure data-cat="ofrendas" data-desc="Ofrenda familiar con flores y velas."><img src="img/gal1.svg" alt="Ofrenda familiar"><figcaption>Ofrenda familiar</figcaption></figure>
+        <figure data-cat="panteon" data-desc="Velas encendidas durante la noche de muertos."><img src="img/gal2.svg" alt="Velas en el panteón"><figcaption>Velas en el panteón</figcaption></figure>
+        <figure data-cat="comida" data-desc="Pan dulce que se coloca en la ofrenda."><img src="img/gal3.svg" alt="Pan de muerto"><figcaption>Pan de muerto</figcaption></figure>
+        <figure data-cat="comida" data-desc="Dulce de temporada con piloncillo y canela."><img src="img/gal4.svg" alt="Calabaza en tacha"><figcaption>Calabaza en tacha</figcaption></figure>
+        <figure data-cat="artesanias" data-desc="Textil tradicional de Saltillo."><img src="img/gal5.svg" alt="Sarape de Saltillo"><figcaption>Sarape de Saltillo</figcaption></figure>
+        <figure data-cat="artesanias" data-desc="Papel decorado que adorna los altares."><img src="img/gal6.svg" alt="Papel picado"><figcaption>Papel picado</figcaption></figure>
+        <figure data-cat="ofrendas" data-desc="Las fotografías recuerdan a los seres queridos."><img src="img/gal7.svg" alt="Fotos en el altar"><figcaption>Fotos en el altar</figcaption></figure>
+        <figure data-cat="panteon" data-desc="Las familias visitan y adornan las tumbas."><img src="img/gal8.svg" alt="Visita al panteón"><figcaption>Visita al panteón</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- 8 y 11. LÍNEA DE TIEMPO (6 nodos) -->
+    <section class="seccion seccion-oscura reveal" id="linea-tiempo">
+      <h2>⏳ Línea de tiempo de Saltillo</h2>
+      <div class="linea-tiempo">
+        <div class="hito">
+          <span class="fecha">Antes de 1577</span>
+          <p>La región estaba habitada por pueblos nómadas, que honraban a sus muertos con rituales.</p>
+        </div>
+        <div class="hito">
+          <span class="fecha">1577</span>
+          <p>Se funda la villa de Santiago del Saltillo.</p>
+        </div>
+        <div class="hito">
+          <span class="fecha">1591</span>
+          <p>Llegan familias tlaxcaltecas y se funda San Esteban de la Nueva Tlaxcala, que aportó su cultura y tradiciones.</p>
+        </div>
+        <div class="hito">
+          <span class="fecha">Siglo XVIII</span>
+          <p>El sarape de Saltillo se vuelve famoso y se comercia en gran parte de la Nueva España.</p>
+        </div>
+        <div class="hito">
+          <span class="fecha">Siglo XIX</span>
+          <p>Saltillo crece como centro político y cultural del estado de Coahuila.</p>
+        </div>
+        <div class="hito">
+          <span class="fecha">Actualidad</span>
+          <p>Las familias mantienen vivas sus ofrendas, fiestas y artesanías, y las transmiten a las nuevas generaciones.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 7. VENTANA MODAL (reutilizable) -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitulo">
+    <div class="modal-caja">
+      <button class="modal-cerrar" id="modalCerrar" aria-label="Cerrar">✕</button>
+      <img id="modalImg" src="" alt="" style="display:none">
+      <div class="modal-texto">
+        <h3 id="modalTitulo"></h3>
+        <p id="modalTexto"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 12. FOOTER -->
+  <footer class="footer-grande">
+    <div class="footer-cols">
+      <div>
+        <h4>Coahuila 🕯️</h4>
+        <p>Proyecto escolar sobre las tradiciones y costumbres de Saltillo, Coahuila, en las fechas de Día de Muertos.</p>
+      </div>
+      <div>
+        <h4>Páginas</h4>
+        <a href="index.html">Inicio</a>
+        <a href="comidas.html">Comidas típicas</a>
+        <a href="tradiciones.html">Tradiciones y costumbres</a>
+      </div>
+      <div>
+        <h4>En esta página</h4>
+        <a href="#tradiciones">Tradiciones</a>
+        <a href="#noticias">Noticias</a>
+        <a href="#galeria-seccion">Galería</a>
+        <a href="#linea-tiempo">Línea de tiempo</a>
+      </div>
+    </div>
+    <div class="footer-abajo">
+      Proyecto escolar · Las Ofrendas en Coahuila · <span id="anio"></span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/componentes.js"></script>
+</body>
+</html>

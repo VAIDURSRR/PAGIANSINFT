@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arte y decoración · Coahuila</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/componentes.css">
+</head>
+<body>
+
+  <div class="banner-fecha">
+    🌼 Día de Muertos · 1 y 2 de noviembre de 2026 · <span id="cuentaRegresiva"></span> 🕯️
+  </div>
+
+   <header class="encabezado">
+    <a href="index.html" class="logo">Coahuila 🕯️</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
+    <nav class="menu" id="menu">
+      <a href="index.html">Inicio</a>
+      <a href="comidas.html">Comidas típicas</a>
+      <a href="tradiciones.html">Tradiciones</a>
+      <a href="fechas.html">Fechas y etapas</a>
+      <a href="arte.html">Arte y decoración</a>
+      <a href="regionales.html">Ofrendas regionales</a>
+      <a href="leyendas.html">Leyendas y mitos</a>
+      <a href="arte-popular.html">Arte popular</a>
+    </nav>
+  </header>
+
+  <nav class="breadcrumbs" aria-label="Ruta de navegación">
+    <ol>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="tradiciones.html">Tradiciones</a></li>
+      <li aria-current="page">Arte y decoración</li>
+    </ol>
+  </nav>
+
+  <div class="titulo-pagina">
+    <h1>Arte y decoración de Coahuila</h1>
+    <p>Colores, texturas y artesanías que dan vida a las ofrendas y a las fiestas de la región.</p>
+  </div>
+
+  <main>
+    <!-- SLIDER -->
+    <div class="slider" aria-label="Imágenes destacadas">
+      <div class="slides">
+        <div class="slide">
+          <img src="img/slide4.svg" alt="Arte y decoración de Coahuila">
+          <div class="pie-slide"><h3>El color de la tradición</h3><p>Cada elemento decorativo tiene un significado.</p></div>
+        </div>
+        <div class="slide">
+          <img src="img/slide5.svg" alt="Papel picado">
+          <div class="pie-slide"><h3>Papel picado</h3><p>Cortado a mano para adornar el altar.</p></div>
+        </div>
+        <div class="slide">
+          <img src="img/slide6.svg" alt="Sarape de Saltillo">
+          <div class="pie-slide"><h3>Sarape de Saltillo</h3><p>Una artesanía que representa a Coahuila.</p></div>
+        </div>
+      </div>
+      <button class="flecha prev" aria-label="Anterior">‹</button>
+      <button class="flecha next" aria-label="Siguiente">›</button>
+      <div class="puntos" id="puntos"></div>
+    </div>
+
+    <!-- INTRODUCCIÓN -->
+    <section class="seccion reveal" id="introduccion">
+      <h2>🎨 El arte de recordar</h2>
+      <div class="fila-img">
+        <img src="img/arte1.svg" alt="Calaveras y catrinas">
+        <div class="texto">
+          <h3>Decorar también es honrar</h3>
+          <p>
+            En Día de Muertos, la decoración no es solo para que se vea bonito: cada color, flor y figura tiene un
+            significado y ayuda a recibir a las almas. En Coahuila se combinan los adornos de todo México con las
+            artesanías propias de la región.
+          </p>
+        </div>
+      </div>
+      <div class="fila-img invertida">
+        <img src="img/arte3.svg" alt="Fibras del desierto">
+        <div class="texto">
+          <h3>Materiales de la región</h3>
+          <p>
+            El clima del norte y el desierto coahuilense dan materiales como la lana, para los textiles, y fibras
+            como el ixtle, que se usan en artesanías y adornos hechos a mano.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TABS: ELEMENTOS DECORATIVOS -->
+    <section class="seccion seccion-oscura reveal" id="elementos">
+      <h2>🌼 Elementos decorativos</h2>
+      <div class="tabs-nav">
+        <button class="tab-btn activo" data-tab="el1">Papel picado</button>
+        <button class="tab-btn" data-tab="el2">Flores</button>
+        <button class="tab-btn" data-tab="el3">Calaveras y catrinas</button>
+        <button class="tab-btn" data-tab="el4">Velas</button>
+        <button class="tab-btn" data-tab="el5">Textiles</button>
+      </div>
+
+      <div class="tab-panel activo" id="el1" style="color:#2a2230">
+        <h3>Papel picado ✂️</h3>
+        <p>Papel de colores con figuras recortadas que se cuelga sobre el altar y en las calles.</p>
+        <ul>
+          <li>Representa el viento y la unión entre la vida y la muerte.</li>
+          <li>Se usan calaveras, flores, cruces y figuras de la naturaleza.</li>
+          <li>Los colores tienen significado: morado (luto), blanco (esperanza) y naranja (sol y vida).</li>
+        </ul>
+      </div>
+
+      <div class="tab-panel" id="el2" style="color:#2a2230">
+        <h3>Flores 🌼</h3>
+        <p>Son la decoración más importante del altar.</p>
+        <ul>
+          <li>El cempasúchil, con su color y aroma, guía a las almas por el camino de pétalos.</li>
+          <li>La flor de nube o gladiola blanca simboliza la pureza.</li>
+          <li>También se usa terciopelo y crisantemo, según la zona.</li>
+        </ul>
+      </div>
+
+      <div class="tab-panel" id="el3" style="color:#2a2230">
+        <h3>Calaveras y catrinas 💀</h3>
+        <p>Figuras que representan la muerte con humor y cariño, no con miedo.</p>
+        <ul>
+          <li>Las calaveras de azúcar llevan el nombre del difunto o de un familiar.</li>
+          <li>La Catrina es un personaje elegante creado como crítica social, hoy símbolo de la fiesta.</li>
+          <li>También hay calaveras de barro, papel maché y cartón.</li>
+        </ul>
+      </div>
+
+      <div class="tab-panel" id="el4" style="color:#2a2230">
+        <h3>Velas y veladoras 🕯️</h3>
+        <p>La luz es indispensable para guiar a las almas.</p>
+        <ul>
+          <li>Se colocan velas, veladoras o cirios en el altar.</li>
+          <li>Representan la fe, la esperanza y el camino de regreso.</li>
+          <li>En algunos altares se forma una cruz con ellas.</li>
+        </ul>
+      </div>
+
+      <div class="tab-panel" id="el5" style="color:#2a2230">
+        <h3>Textiles 🧶</h3>
+        <p>Los manteles y telas dan color y base al altar.</p>
+        <ul>
+          <li>Se usan manteles bordados, telas de colores y tejidos tradicionales.</li>
+          <li>El sarape de Saltillo es un símbolo de la región y puede acompañar la decoración.</li>
+          <li>Las telas se acomodan por niveles, de acuerdo con la forma del altar.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CARDS CON MODAL -->
+    <section class="seccion reveal" id="artesanias">
+      <h2>🏺 Artesanías de Coahuila</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="img/gal5.svg" alt="Sarape de Saltillo">
+          <div class="cuerpo">
+            <h3>Sarape de Saltillo</h3>
+            <p>Tejido tradicional, símbolo de la ciudad.</p>
+            <button class="btn-chico" data-modal data-titulo="Sarape de Saltillo" data-img="img/gal5.svg"
+              data-texto="El sarape de Saltillo es una prenda tejida con colores vivos y diseños geométricos. Es una de las artesanías más reconocidas de Coahuila y se ha usado como abrigo y como adorno del hogar.">Ver más</button>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/arte3.svg" alt="Ixtle">
+          <div class="cuerpo">
+            <h3>Fibras del desierto</h3>
+            <p>Artesanías hechas con plantas de la región.</p>
+            <button class="btn-chico" data-modal data-titulo="Fibras del desierto" data-img="img/arte3.svg"
+              data-texto="En el semidesierto del norte se aprovechan plantas como la lechuguilla, de donde se obtiene el ixtle. Con estas fibras se elaboran cuerdas, cepillos, bolsas y otros objetos hechos a mano.">Ver más</button>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/gal6.svg" alt="Papel picado">
+          <div class="cuerpo">
+            <h3>Papel picado</h3>
+            <p>Arte recortado a mano para las fiestas.</p>
+            <button class="btn-chico" data-modal data-titulo="Papel picado" data-img="img/gal6.svg"
+              data-texto="El papel picado se hace doblando varias hojas de papel de china y recortándolas con cinceles o tijeras. Se cuelga en altares, calles y plazas durante las fiestas.">Ver más</button>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/arte1.svg" alt="Calaveras">
+          <div class="cuerpo">
+            <h3>Calaveras de azúcar</h3>
+            <p>Dulces decorados con el nombre de alguien querido.</p>
+            <button class="btn-chico" data-modal data-titulo="Calaveras de azúcar" data-img="img/arte1.svg"
+              data-texto="Las calaveras de azúcar se moldean y se decoran con colores, brillos y el nombre de una persona. Se colocan en la ofrenda y también se regalan entre amigos y familiares.">Ver más</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ALTAR POR NIVELES (LÍNEA DE TIEMPO) -->
+    <section class="seccion seccion-oscura reveal" id="altar">
+      <h2>🕯️ Cómo se decora un altar</h2>
+      <div class="linea-tiempo">
+        <div class="hito">
+          <span class="fecha">Paso 1 · La base</span>
+          <p>Se elige el lugar y se arma la mesa o los niveles con cajas o bancos, cubiertos con un mantel.</p>
+        </div>
+        <div class="hito">
+          <span class="fecha">Paso 2 · El papel picado</span>
+          <p>Se coloca en el frente o en la parte de arriba, para dar color y movimiento.</p>
+        </div>
+        <div class="hito">
+          <span class="fecha">Paso 3 · Las fotografías</span>
+          <p>Se ponen en un lugar visible, junto con objetos que el difunto usaba en vida.</p>
+        </div>
+        <div class="hito">
+          <span class="fecha">Paso 4 · Las velas</span>
+          <p>Se colocan en candeleros o veladoras para iluminar el camino de las almas.</p>
+        </div>
+        <div class="hito">
+          <span class="fecha">Paso 5 · Las flores</span>
+          <p>Se adorna con cempasúchil y otras flores, y se hace un camino de pétalos hacia la puerta.</p>
+        </div>
+        <div class="hito">
+          <span class="fecha">Paso 6 · La comida y la bebida</span>
+          <p>Se acomodan el pan, la fruta, la sal, el agua y el platillo favorito del difunto.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERÍA CON FILTROS -->
+    <section class="seccion reveal" id="galeria-seccion">
+      <h2>🖼️ Galería</h2>
+      <div class="filtros" id="filtrosGaleria">
+        <button class="filtro activo" data-filtro="todas">Todas</button>
+        <button class="filtro" data-filtro="papel">Papel y calaveras</button>
+        <button class="filtro" data-filtro="flores">Flores y luz</button>
+        <button class="filtro" data-filtro="textiles">Textiles y fibras</button>
+      </div>
+      <div class="galeria" id="galeria">
+        <figure data-cat="papel" data-desc="Papel decorado que adorna los altares."><img src="img/gal6.svg" alt="Papel picado"><figcaption>Papel picado</figcaption></figure>
+        <figure data-cat="papel" data-desc="Figuras que representan la muerte con humor y cariño."><img src="img/arte1.svg" alt="Calaveras y catrinas"><figcaption>Calaveras y catrinas</figcaption></figure>
+        <figure data-cat="flores" data-desc="La flor que guía a las almas con su color y aroma."><img src="img/arte2.svg" alt="Cempasúchil"><figcaption>Cempasúchil</figcaption></figure>
+        <figure data-cat="flores" data-desc="La luz que ilumina el camino de regreso."><img src="img/gal2.svg" alt="Velas"><figcaption>Velas</figcaption></figure>
+        <figure data-cat="flores" data-desc="Altar con flores, fotos y velas."><img src="img/gal1.svg" alt="Ofrenda"><figcaption>Ofrenda</figcaption></figure>
+        <figure data-cat="textiles" data-desc="Textil tradicional de Saltillo."><img src="img/gal5.svg" alt="Sarape de Saltillo"><figcaption>Sarape de Saltillo</figcaption></figure>
+        <figure data-cat="textiles" data-desc="Fibra obtenida de plantas del semidesierto."><img src="img/arte3.svg" alt="Ixtle"><figcaption>Ixtle</figcaption></figure>
+        <figure data-cat="papel" data-desc="Las fotografías recuerdan a los seres queridos."><img src="img/gal7.svg" alt="Fotos en el altar"><figcaption>Fotos en el altar</figcaption></figure>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAL -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitulo">
+    <div class="modal-caja">
+      <button class="modal-cerrar" id="modalCerrar" aria-label="Cerrar">✕</button>
+      <img id="modalImg" src="" alt="" style="display:none">
+      <div class="modal-texto">
+        <h3 id="modalTitulo"></h3>
+        <p id="modalTexto"></p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer-grande">
+    <div class="footer-cols">
+      <div>
+        <h4>Coahuila 🕯️</h4>
+        <p>Proyecto escolar sobre el Día de Muertos y sus tradiciones en Coahuila.</p>
+      </div>
+      <div>
+        <h4>Páginas</h4>
+        <a href="index.html">Inicio</a>
+        <a href="comidas.html">Comidas típicas</a>
+        <a href="tradiciones.html">Tradiciones y costumbres</a>
+        <a href="fechas.html">Fechas y etapas</a>
+        <a href="arte.html">Arte y decoración</a>
+      </div>
+      <div>
+        <h4>En esta página</h4>
+        <a href="#elementos">Elementos decorativos</a>
+        <a href="#artesanias">Artesanías</a>
+        <a href="#altar">Cómo decorar un altar</a>
+        <a href="#galeria-seccion">Galería</a>
+      </div>
+    </div>
+    <div class="footer-abajo">
+      Proyecto escolar · Las Ofrendas en Coahuila · <span id="anio"></span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/componentes.js"></script>
+</body>
+</html>

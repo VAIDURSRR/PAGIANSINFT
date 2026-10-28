@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arte popular · Día de Muertos en Coahuila</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/componentes.css">
+</head>
+<body>
+
+  <div class="banner-fecha">
+    🌼 Día de Muertos · 1 y 2 de noviembre de 2026 · <span id="cuentaRegresiva"></span> 🕯️
+  </div>
+
+  <header class="encabezado">
+    <a href="index.html" class="logo">Coahuila 🕯️</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
+    <nav class="menu" id="menu">
+      <a href="index.html">Inicio</a>
+      <a href="comidas.html">Comidas típicas</a>
+      <a href="tradiciones.html">Tradiciones</a>
+      <a href="fechas.html">Fechas y etapas</a>
+      <a href="arte.html">Arte y decoración</a>
+      <a href="regionales.html">Ofrendas regionales</a>
+      <a href="leyendas.html">Leyendas y mitos</a>
+      <a href="arte-popular.html">Arte popular</a>
+    </nav>
+  </header>
+
+  <nav class="breadcrumbs" aria-label="Ruta de navegación">
+    <ol>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="tradiciones.html">Tradiciones</a></li>
+      <li aria-current="page">Arte popular</li>
+    </ol>
+  </nav>
+
+  <div class="titulo-pagina">
+    <h1>Arte popular para el Día de Muertos</h1>
+    <p>Catrinas, danza, poesía, desfiles y festivales: así se expresa Coahuila en estas fechas.</p>
+  </div>
+
+  <main>
+    <!-- SLIDER -->
+    <div class="slider" aria-label="Arte popular destacado">
+      <div class="slides">
+        <div class="slide">
+          <img src="img/pop2_wide.svg" alt="Catrinas y catrines">
+          <div class="pie-slide"><h3>Catrinas y catrines</h3><p>Concursos y desfiles en varios municipios del estado.</p></div>
+        </div>
+        <div class="slide">
+          <img src="img/pop4_wide.svg" alt="Ánimas del Desierto">
+          <div class="pie-slide"><h3>Ánimas del Desierto</h3><p>Altares monumentales y actividades artísticas en Saltillo.</p></div>
+        </div>
+        <div class="slide">
+          <img src="img/pop1_wide.svg" alt="Danza de los matlachines">
+          <div class="pie-slide"><h3>Danza de los matlachines</h3><p>Una tradición de música, color y fe, patrimonio cultural de Coahuila.</p></div>
+        </div>
+      </div>
+      <button class="flecha prev" aria-label="Anterior">‹</button>
+      <button class="flecha next" aria-label="Siguiente">›</button>
+      <div class="puntos" id="puntos"></div>
+    </div>
+
+    <!-- INTRODUCCIÓN -->
+    <section class="seccion reveal" id="introduccion">
+      <h2>🎭 ¿Qué es el arte popular?</h2>
+      <div class="fila-img">
+        <img src="img/pop6.svg" alt="Cartonería y grabado">
+        <div class="texto">
+          <h3>El arte que hace la comunidad</h3>
+          <p>
+            El arte popular es el que nace del pueblo: lo hacen artesanos, familias, escuelas y grupos de la
+            comunidad, y se transmite de generación en generación. En Día de Muertos aparece en las
+            <strong>catrinas</strong>, la <strong>cartonería</strong>, los <strong>grabados</strong>, la
+            <strong>poesía</strong>, los <strong>desfiles</strong> y los <strong>altares</strong>.
+          </p>
+          <p style="margin-top:10px">
+            En Coahuila, estas expresiones se viven en festivales que llenan de color las plazas, los museos y las
+            calles de muchos municipios.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TABS: FORMAS DE ARTE POPULAR -->
+    <section class="seccion seccion-oscura reveal" id="formas">
+      <h2>🎨 Formas de arte popular</h2>
+      <div class="tabs-nav">
+        <button class="tab-btn activo" data-tab="ap1">Catrinas</button>
+        <button class="tab-btn" data-tab="ap2">Cartonería y grabado</button>
+        <button class="tab-btn" data-tab="ap3">Poesía</button>
+        <button class="tab-btn" data-tab="ap4">Desfiles y luz</button>
+        <button class="tab-btn" data-tab="ap5">Danza</button>
+      </div>
+
+      <div class="tab-panel activo" id="ap1" style="color:#2a2230">
+        <h3>Catrinas y catrines 👒</h3>
+        <p>La Catrina es una calavera elegante que se volvió símbolo de la fiesta. Hoy cualquiera puede ser una.</p>
+        <ul>
+          <li>En Coahuila hay concursos y desfiles de catrinas y catrines, como en Parras, Viesca, Cuatro Ciénegas y Monclova.</li>
+          <li>Se caracterizan con maquillaje, vestidos, sombreros y accesorios.</li>
+          <li>También se elaboran figuras de catrina con cartonería.</li>
+        </ul>
+      </div>
+
+      <div class="tab-panel" id="ap2" style="color:#2a2230">
+        <h3>Cartonería y grabado ✂️</h3>
+        <p>La cartonería trabaja con papel y engrudo para crear calaveras, catrinas y figuras.</p>
+        <ul>
+          <li>En Saltillo hay talleres de cartonería donde se aprende a hacer catrinas.</li>
+          <li>El grabado popular usa imágenes de calaveras para contar historias y críticas con humor.</li>
+          <li>El Museo de La Katrina, en Saltillo, presenta exposiciones de grabados durante su festival.</li>
+        </ul>
+      </div>
+
+      <div class="tab-panel" id="ap3" style="color:#2a2230">
+        <h3>Poesía y calaveritas 📜</h3>
+        <p>Las calaveritas son versos cortos y divertidos que hablan de la muerte con humor.</p>
+        <ul>
+          <li>Se escriben para amigos, familiares o personajes conocidos.</li>
+          <li>En los festivales hay lecturas de poemas junto a los altares.</li>
+          <li>Son una forma de decir que la muerte también se puede recordar con alegría.</li>
+        </ul>
+      </div>
+
+      <div class="tab-panel" id="ap4" style="color:#2a2230">
+        <h3>Desfiles y luz 🏮</h3>
+        <p>Las calles se convierten en un gran escenario.</p>
+        <ul>
+          <li>El desfile Xantolum recorre el centro de Saltillo cada 1 de noviembre.</li>
+          <li>La Noche de Linternas invita a las familias a recorrer el Museo del Desierto con luces y disfraces.</li>
+          <li>Hay altares monumentales y montajes con flores, mariposas y color.</li>
+        </ul>
+      </div>
+
+      <div class="tab-panel" id="ap5" style="color:#2a2230">
+        <h3>Danza 💃</h3>
+        <p>La danza de los matlachines es una de las expresiones más arraigadas de Coahuila.</p>
+        <ul>
+          <li>Los danzantes llevan penachos de colores, huaraches con lámina y sonajas.</li>
+          <li>Avanzan en filas al ritmo del tambor.</li>
+          <li>Es una tradición religiosa y cultural que se vive en muchos municipios, y no solo en estas fechas.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CARDS CON MODAL -->
+    <section class="seccion reveal" id="destacados">
+      <h2>⭐ Lo más destacado de Coahuila</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="img/pop4.svg" alt="Ánimas del Desierto">
+          <div class="cuerpo">
+            <h3>Festival de las Ánimas del Desierto</h3>
+            <p>El gran festival de Saltillo.</p>
+            <button class="btn-chico" data-modal data-titulo="Festival de las Ánimas del Desierto" data-img="img/pop4.svg"
+              data-texto="Es uno de los festivales más grandes de Saltillo para esta temporada. En 2026 se realiza del 22 de octubre al 3 de noviembre e incluye el Festival Paso de la Mariposa Monarca, un altar monumental en el barrio de Santa Anita y un magno altar en el Parque Las Maravillas.">Ver más</button>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/pop7.svg" alt="Museo de La Katrina">
+          <div class="cuerpo">
+            <h3>Entre Flores y Amores</h3>
+            <p>Festival del Museo de La Katrina, en Saltillo.</p>
+            <button class="btn-chico" data-modal data-titulo="Entre Flores y Amores" data-img="img/pop7.svg"
+              data-texto="El Museo de La Katrina organiza este festival, que en 2026 llega a su edición 17, del 26 de octubre al 2 de noviembre. Incluye talleres de gastronomía, una exposición de grabados, recorridos, lectura de poemas y un altar.">Ver más</button>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/pop2.svg" alt="Camino de las Flores">
+          <div class="cuerpo">
+            <h3>Camino de las Flores · Parras</h3>
+            <p>Catrinas, callejoneadas y ofrendas.</p>
+            <button class="btn-chico" data-modal data-titulo="Camino de las Flores · Parras de la Fuente" data-img="img/pop2.svg"
+              data-texto="Parras de la Fuente celebra del 16 de octubre al 3 de noviembre con concursos de catrinas y catrines, callejoneadas, ofrendas, actividades artísticas, un altar y celebraciones en bodegas vinícolas.">Ver más</button>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/pop5.svg" alt="Luz y Raíces">
+          <div class="cuerpo">
+            <h3>Festival Luz y Raíces · Cuatro Ciénegas</h3>
+            <p>Tapetes, catrinas y procesión al panteón.</p>
+            <button class="btn-chico" data-modal data-titulo="Festival Internacional Luz y Raíces · Cuatro Ciénegas" data-img="img/pop5.svg"
+              data-texto="Del 30 de octubre al 1 de noviembre de 2026, Cuatro Ciénegas realiza este festival con una exposición de tapetes, presentaciones artísticas, concurso de catrinas, muestra gastronómica, desfile y una procesión al Panteón San José.">Ver más</button>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/pop3.svg" alt="Noche de Linternas">
+          <div class="cuerpo">
+            <h3>Noche de Linternas</h3>
+            <p>Recorrido nocturno para familias en Saltillo.</p>
+            <button class="btn-chico" data-modal data-titulo="Noche de Linternas · Saltillo" data-img="img/pop3.svg"
+              data-texto="El 30 de octubre, el Museo del Desierto invita a las familias a hacer recorridos nocturnos con linternas y disfraces, con la oscuridad y la luz como protagonistas de la noche.">Ver más</button>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/pop1.svg" alt="Matlachines">
+          <div class="cuerpo">
+            <h3>Danza de los matlachines</h3>
+            <p>Patrimonio cultural inmaterial de Coahuila.</p>
+            <button class="btn-chico" data-modal data-titulo="Danza de los matlachines" data-img="img/pop1.svg"
+              data-texto="Es una tradición ritual y religiosa muy arraigada en Coahuila. Llegó al sur del estado durante la colonización, con la fundación de San Esteban de la Nueva Tlaxcala en 1591. Los danzantes avanzan en filas al ritmo del tambor, con penachos de plumas, huaraches con lámina y sonaja. El Congreso de Coahuila la declaró Patrimonio Cultural Inmaterial del estado en 2023. Hay unos 214 grupos y cerca de 4,000 danzantes en el estado.">Ver más</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- AGENDA 2026 (FILTROS) -->
+    <section class="seccion seccion-oscura reveal" id="agenda">
+      <h2>📅 Agenda 2026 en Coahuila</h2>
+      <p class="intro">Eventos de Día de Muertos de este año. Filtra por zona. Los horarios y sedes pueden cambiar, así que confírmalos en los canales oficiales de cada municipio.</p>
+
+      <div class="filtros" id="filtrosAgenda">
+        <button class="filtro activo" data-filtro="todos">Todos</button>
+        <button class="filtro" data-filtro="saltillo">Saltillo</button>
+        <button class="filtro" data-filtro="monclova">Monclova</button>
+        <button class="filtro" data-filtro="laguna">Laguna</button>
+        <button class="filtro" data-filtro="pueblos">Pueblos Mágicos</button>
+      </div>
+
+      <div class="lista-noticias">
+        <article class="noticia evento" data-zona="saltillo" data-ini="2026-10-22" data-fin="2026-11-03" data-img="img/pop4.svg"
+          data-titulo="Festival de las Ánimas del Desierto" data-texto="Saltillo, del 22 de octubre al 3 de noviembre. Incluye el Festival Paso de la Mariposa Monarca, un altar monumental en el barrio de Santa Anita y un magno altar en el Parque Las Maravillas.">
+          <div class="fecha-noticia"><strong>22</strong>OCT<br><small>al 3 NOV</small></div>
+          <div><span class="etiqueta">Saltillo</span> <span class="etiqueta estado"></span><h3 style="color:var(--morado)">Festival de las Ánimas del Desierto</h3><p style="color:#2a2230">Altares monumentales y actividades artísticas.</p></div>
+          <button class="btn-chico">Detalles</button>
+        </article>
+
+        <article class="noticia evento" data-zona="saltillo" data-ini="2026-10-26" data-fin="2026-11-02" data-img="img/pop7.svg"
+          data-titulo="17° Festival Entre Flores y Amores" data-texto="Museo de La Katrina, Saltillo, del 26 de octubre al 2 de noviembre. Talleres de gastronomía, exposición de grabados, recorridos, lectura de poemas y un altar.">
+          <div class="fecha-noticia"><strong>26</strong>OCT<br><small>al 2 NOV</small></div>
+          <div><span class="etiqueta">Saltillo</span> <span class="etiqueta estado"></span><h3 style="color:var(--morado)">Entre Flores y Amores · Museo de La Katrina</h3><p style="color:#2a2230">Talleres, grabados, recorridos y poesía.</p></div>
+          <button class="btn-chico">Detalles</button>
+        </article>
+
+        <article class="noticia evento" data-zona="saltillo" data-ini="2026-10-30" data-fin="2026-10-30" data-img="img/pop3.svg"
+          data-titulo="Noche de Linternas" data-texto="Museo del Desierto, Saltillo, 30 de octubre. Recorridos nocturnos para familias con linternas y disfraces.">
+          <div class="fecha-noticia"><strong>30</strong>OCT</div>
+          <div><span class="etiqueta">Saltillo</span> <span class="etiqueta estado"></span><h3 style="color:var(--morado)">Noche de Linternas · Museo del Desierto</h3><p style="color:#2a2230">Recorrido nocturno con luces y disfraces.</p></div>
+          <button class="btn-chico">Detalles</button>
+        </article>
+
+        <article class="noticia evento" data-zona="saltillo" data-ini="2026-11-01" data-fin="2026-11-01" data-img="img/pop5.svg"
+          data-titulo="Xantolum, Desfile de Día de Muertos" data-texto="Saltillo, 1 de noviembre. El desfile va del Teatro de la Ciudad al Parque Centro.">
+          <div class="fecha-noticia"><strong>01</strong>NOV</div>
+          <div><span class="etiqueta">Saltillo</span> <span class="etiqueta estado"></span><h3 style="color:var(--morado)">Xantolum · Desfile de Día de Muertos</h3><p style="color:#2a2230">Del Teatro de la Ciudad al Parque Centro.</p></div>
+          <button class="btn-chico">Detalles</button>
+        </article>
+
+        <article class="noticia evento" data-zona="monclova" data-ini="2026-10-14" data-fin="2026-11-02" data-img="img/pop2.svg"
+          data-titulo="Festival Flores y Calaveras" data-texto="Monclova, del 14 de octubre al 2 de noviembre, en distintos puntos de la ciudad.">
+          <div class="fecha-noticia"><strong>14</strong>OCT<br><small>al 2 NOV</small></div>
+          <div><span class="etiqueta">Monclova</span> <span class="etiqueta estado"></span><h3 style="color:var(--morado)">Flores y Calaveras</h3><p style="color:#2a2230">Actividades en distintos puntos de la ciudad.</p></div>
+          <button class="btn-chico">Detalles</button>
+        </article>
+
+        <article class="noticia evento" data-zona="monclova" data-ini="2026-10-22" data-fin="2026-10-31" data-img="img/pop2.svg"
+          data-titulo="Festival de la Calabaza" data-texto="Monclova, del 22 al 31 de octubre, en el Eco Parque. Incluye concursos, actividades de temporada y pasarelas de catrinas y catrines.">
+          <div class="fecha-noticia"><strong>22</strong>OCT<br><small>al 31 OCT</small></div>
+          <div><span class="etiqueta">Monclova</span> <span class="etiqueta estado"></span><h3 style="color:var(--morado)">Festival de la Calabaza</h3><p style="color:#2a2230">Concursos y pasarelas de catrinas en el Eco Parque.</p></div>
+          <button class="btn-chico">Detalles</button>
+        </article>
+
+        <article class="noticia evento" data-zona="laguna" data-ini="2026-10-29" data-fin="2026-10-29" data-img="img/pop5.svg"
+          data-titulo="Festival de Día de Muertos · San Pedro" data-texto="San Pedro, 29 de octubre. Incluye desfile, concursos y una noche de luces.">
+          <div class="fecha-noticia"><strong>29</strong>OCT</div>
+          <div><span class="etiqueta">Laguna</span> <span class="etiqueta estado"></span><h3 style="color:var(--morado)">Festival de Día de Muertos · San Pedro</h3><p style="color:#2a2230">Desfile, concursos y noche de luces.</p></div>
+          <button class="btn-chico">Detalles</button>
+        </article>
+
+        <article class="noticia evento" data-zona="laguna" data-ini="2026-10-30" data-fin="2026-10-30" data-img="img/pop5.svg"
+          data-titulo="Desfile y concurso · Torreón" data-texto="Torreón, 30 de octubre. El desfile va de la Alameda Zaragoza a la Plaza Mayor.">
+          <div class="fecha-noticia"><strong>30</strong>OCT</div>
+          <div><span class="etiqueta">Laguna</span> <span class="etiqueta estado"></span><h3 style="color:var(--morado)">Desfile y concurso · Torreón</h3><p style="color:#2a2230">De la Alameda Zaragoza a la Plaza Mayor.</p></div>
+          <button class="btn-chico">Detalles</button>
+        </article>
+
+        <article class="noticia evento" data-zona="pueblos" data-ini="2026-10-16" data-fin="2026-11-03" data-img="img/pop2.svg"
+          data-titulo="Camino de las Flores · Parras de la Fuente" data-texto="Parras de la Fuente, del 16 de octubre al 3 de noviembre. Concursos de catrinas y catrines, callejoneadas, ofrendas, actividades artísticas, un altar y celebraciones en bodegas vinícolas.">
+          <div class="fecha-noticia"><strong>16</strong>OCT<br><small>al 3 NOV</small></div>
+          <div><span class="etiqueta">Pueblo Mágico</span> <span class="etiqueta estado"></span><h3 style="color:var(--morado)">Camino de las Flores · Parras</h3><p style="color:#2a2230">Catrinas, callejoneadas y ofrendas.</p></div>
+          <button class="btn-chico">Detalles</button>
+        </article>
+
+        <article class="noticia evento" data-zona="pueblos" data-ini="2026-10-30" data-fin="2026-10-30" data-img="img/pop2.svg"
+          data-titulo="Desfile de Catrinas · Viesca" data-texto="Viesca, viernes 30 de octubre. Desfile de catrinas.">
+          <div class="fecha-noticia"><strong>30</strong>OCT</div>
+          <div><span class="etiqueta">Pueblo Mágico</span> <span class="etiqueta estado"></span><h3 style="color:var(--morado)">Desfile de Catrinas · Viesca</h3><p style="color:#2a2230">Un desfile lleno de color.</p></div>
+          <button class="btn-chico">Detalles</button>
+        </article>
+
+        <article class="noticia evento" data-zona="pueblos" data-ini="2026-10-30" data-fin="2026-11-01" data-img="img/pop5.svg"
+          data-titulo="Festival Internacional Luz y Raíces · Cuatro Ciénegas" data-texto="Cuatro Ciénegas, del 30 de octubre al 1 de noviembre. Exposición de tapetes, presentaciones artísticas, concurso de catrinas, muestra gastronómica, desfile y procesión al Panteón San José.">
+          <div class="fecha-noticia"><strong>30</strong>OCT<br><small>al 1 NOV</small></div>
+          <div><span class="etiqueta">Pueblo Mágico</span> <span class="etiqueta estado"></span><h3 style="color:var(--morado)">Luz y Raíces · Cuatro Ciénegas</h3><p style="color:#2a2230">Tapetes, catrinas, desfile y procesión.</p></div>
+          <button class="btn-chico">Detalles</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- LÍNEA DE TIEMPO: MATLACHINES -->
+    <section class="seccion reveal" id="matlachines">
+      <h2>💃 Los matlachines en el tiempo</h2>
+      <div class="linea-tiempo">
+        <div class="hito">
+          <span class="fecha" style="color:var(--naranja)">1591</span>
+          <p>Con la fundación de San Esteban de la Nueva Tlaxcala llega la danza al sur de Coahuila.</p>
+        </div>
+        <div class="hito">
+          <span class="fecha" style="color:var(--naranja)">Siglos siguientes</span>
+          <p>La tradición se extiende a otros municipios y pasa de familia en familia.</p>
+        </div>
+        <div class="hito">
+          <span class="fecha" style="color:var(--naranja)">2021</span>
+          <p>Durante el 444 aniversario de Saltillo, la Matlachinada logra un récord Guinness.</p>
+        </div>
+        <div class="hito">
+          <span class="fecha" style="color:var(--naranja)">2023</span>
+          <p>El Congreso de Coahuila declara la danza Patrimonio Cultural Inmaterial del estado.</p>
+        </div>
+        <div class="hito">
+          <span class="fecha" style="color:var(--naranja)">Hoy</span>
+          <p>Hay unos 214 grupos y cerca de 4,000 danzantes de todas las edades en el estado.</p>
+        </div>
+      </div>
+      <p class="nota">Los matlachines son una tradición religiosa y cultural de todo el año; se incluyen aquí por ser una de las expresiones de arte popular más importantes de Coahuila.</p>
+    </section>
+
+    <!-- FUENTES -->
+    <section class="seccion seccion-oscura reveal" id="fuentes">
+      <h2>📚 Fuentes consultadas</h2>
+      <ul style="margin-left:22px">
+        <li><a style="color:var(--naranja-claro)" href="https://www.cronica.com.mx/estados/2026/10/19/coahuila-se-llenara-de-flores-colores-y-tradicion-con-festivales-de-dia-de-muertos/" target="_blank" rel="noopener">La Crónica de Hoy: Coahuila se llenará de flores, colores y tradición con festivales de Día de Muertos (19/10/2026)</a></li>
+        <li><a style="color:var(--naranja-claro)" href="https://www.unotv.com/estados/coahuila/festivales-desfiles-eventos-dia-de-muertos-coahuila-fechas-lugares-2026/" target="_blank" rel="noopener">UnoTV: Festivales, desfiles y eventos de Día de Muertos en Coahuila 2026</a></li>
+        <li><a style="color:var(--naranja-claro)" href="https://vanguardia.com.mx/coahuila/declaran-a-danza-de-los-matlachines-patrimonio-cultural-inmaterial-de-coahuila-CD10134996" target="_blank" rel="noopener">Vanguardia: Declaran a la danza de los matlachines Patrimonio Cultural Inmaterial de Coahuila</a></li>
+        <li><a style="color:var(--naranja-claro)" href="https://vanguardia.com.mx/show/artes/es-tu-oportunidad-aprende-a-hacer-catrinas-en-el-taller-de-cartoneria-mexicana-del-dif-saltillo-MJ9748529" target="_blank" rel="noopener">Vanguardia: Taller de Cartonería Mexicana del DIF Saltillo</a></li>
+      </ul>
+      <p class="nota" style="margin-top:12px">Los textos están escritos con palabras propias a partir de estas fuentes. Confirma fechas y sedes en los canales oficiales de cada municipio.</p>
+    </section>
+  </main>
+
+  <!-- MODAL -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitulo">
+    <div class="modal-caja">
+      <button class="modal-cerrar" id="modalCerrar" aria-label="Cerrar">✕</button>
+      <img id="modalImg" src="" alt="" style="display:none">
+      <div class="modal-texto">
+        <h3 id="modalTitulo"></h3>
+        <p id="modalTexto"></p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer-grande">
+    <div class="footer-cols">
+      <div>
+        <h4>Coahuila 🕯️</h4>
+        <p>Proyecto escolar sobre el Día de Muertos y sus tradiciones en Coahuila.</p>
+      </div>
+      <div>
+        <h4>Páginas</h4>
+        <a href="index.html">Inicio</a>
+        <a href="comidas.html">Comidas típicas</a>
+        <a href="tradiciones.html">Tradiciones y costumbres</a>
+        <a href="fechas.html">Fechas y etapas</a>
+        <a href="arte.html">Arte y decoración</a>
+        <a href="regionales.html">Ofrendas regionales</a>
+        <a href="leyendas.html">Leyendas y mitos</a>
+        <a href="arte-popular.html">Arte popular</a>
+      </div>
+      <div>
+        <h4>En esta página</h4>
+        <a href="#formas">Formas de arte popular</a>
+        <a href="#destacados">Lo más destacado</a>
+        <a href="#agenda">Agenda 2026</a>
+        <a href="#matlachines">Matlachines</a>
+        <a href="#fuentes">Fuentes</a>
+      </div>
+    </div>
+    <div class="footer-abajo">
+      Proyecto escolar · Las Ofrendas en Coahuila · <span id="anio"></span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/componentes.js"></script>
+  <script src="js/eventos.js"></script>
+</body>
+</html>

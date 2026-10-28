@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leyendas y mitos · Coahuila</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/componentes.css">
+</head>
+<body>
+
+  <div class="banner-fecha">
+    🌼 Día de Muertos · 1 y 2 de noviembre de 2026 · <span id="cuentaRegresiva"></span> 🕯️
+  </div>
+
+    <header class="encabezado">
+    <a href="index.html" class="logo">Coahuila 🕯️</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
+    <nav class="menu" id="menu">
+      <a href="index.html">Inicio</a>
+      <a href="comidas.html">Comidas típicas</a>
+      <a href="tradiciones.html">Tradiciones</a>
+      <a href="fechas.html">Fechas y etapas</a>
+      <a href="arte.html">Arte y decoración</a>
+      <a href="regionales.html">Ofrendas regionales</a>
+      <a href="leyendas.html">Leyendas y mitos</a>
+      <a href="arte-popular.html">Arte popular</a>
+    </nav>
+  </header>
+  
+
+  <nav class="breadcrumbs" aria-label="Ruta de navegación">
+    <ol>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="tradiciones.html">Tradiciones</a></li>
+      <li aria-current="page">Leyendas y mitos</li>
+    </ol>
+  </nav>
+
+  <div class="titulo-pagina">
+    <h1>Leyendas y mitos de Coahuila</h1>
+    <p>Historias que se cuentan de generación en generación, sobre todo en estas fechas.</p>
+  </div>
+
+  <main>
+    <!-- SLIDER -->
+    <div class="slider" aria-label="Leyendas destacadas">
+      <div class="slides">
+        <div class="slide">
+          <img src="img/slide2.svg" alt="Noche de leyendas">
+          <div class="pie-slide"><h3>Historias de noche</h3><p>Las leyendas se cuentan cuando cae el sol.</p></div>
+        </div>
+        <div class="slide">
+          <img src="img/ley1.svg" alt="La Taconera">
+          <div class="pie-slide"><h3>La Taconera</h3><p>Pasos en el Centro Histórico de Saltillo.</p></div>
+        </div>
+        <div class="slide">
+          <img src="img/ley3.svg" alt="El tesoro de Angelita">
+          <div class="pie-slide"><h3>El tesoro de Angelita</h3><p>Un tesoro que no era de dinero.</p></div>
+        </div>
+      </div>
+      <button class="flecha prev" aria-label="Anterior">‹</button>
+      <button class="flecha next" aria-label="Siguiente">›</button>
+      <div class="puntos" id="puntos"></div>
+    </div>
+
+    <!-- QUÉ ES UNA LEYENDA / UN MITO -->
+    <section class="seccion reveal" id="introduccion">
+      <h2>📖 ¿Leyenda o mito?</h2>
+      <div class="fila-img">
+        <img src="img/ley5.svg" alt="Leyendas de Coahuila">
+        <div class="texto">
+          <h3>Dos formas de contar el mundo</h3>
+          <p>
+            Una <strong>leyenda</strong> es un relato popular que se cuenta como algo que pudo haber pasado, casi
+            siempre en un lugar real, como una calle o una casa. Un <strong>mito</strong> explica creencias más
+            profundas, como el origen de las cosas o lo que pasa después de la muerte.
+          </p>
+          <p style="margin-top:10px">
+            Las leyendas cambian un poco según quien las cuente, y muchas no tienen registros oficiales: son parte
+            de la <strong>tradición oral</strong> de la comunidad.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEYENDAS DE SALTILLO (CARDS + MODAL) -->
+    <section class="seccion seccion-oscura reveal" id="saltillo">
+      <h2>👻 Leyendas de Saltillo</h2>
+      <p class="intro">Toca "Leer la leyenda" para conocer cada historia.</p>
+      <div class="cards">
+        <article class="card">
+          <img src="img/ley1.svg" alt="La Taconera">
+          <div class="cuerpo">
+            <h3>La Taconera</h3>
+            <p style="color:#2a2230">El alma que se escucha caminar en el Centro Histórico.</p>
+            <button class="btn-chico" data-modal data-titulo="La Taconera" data-img="img/ley1.svg"
+              data-texto="Cuentan que en el Centro Histórico de Saltillo vivía una mujer a la que apodaban La Taconera por el sonido de sus tacones al caminar. De día cuidaba a su madre, una anciana muy enferma. De noche salía a ver a un enamorado. Una madrugada regresó tarde, encontró la casa en silencio y a su madre muerta. Llena de culpa y dolor, ella también murió poco después. Desde entonces, los vecinos dicen escuchar pasos y tacones por las calles de noche, pero al asomarse no hay nadie. Se piensa que su alma sigue recorriendo el lugar como castigo por haber dejado sola a su madre. Existen varias versiones de esta leyenda.">Leer la leyenda</button>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/ley2.svg" alt="El niño del trenazo">
+          <div class="cuerpo">
+            <h3>El niño del trenazo</h3>
+            <p style="color:#2a2230">Una silueta infantil entre las vías del tren.</p>
+            <button class="btn-chico" data-modal data-titulo="El niño del trenazo" data-img="img/ley2.svg"
+              data-texto="La leyenda dice que hace muchos años un niño murió atropellado por el tren cerca de las vías de Saltillo. Unos cuentan que quiso recoger un juguete o una pelota, y otros que intentaba alcanzar a su mamá al otro lado. Se dice que en noches frías o con neblina, algunas personas han visto una silueta pequeña entre los rieles, o han escuchado risas, pasos y llanto. Algunos conductores aseguran haber sentido un leve golpe en el carro al cruzar. No hay registros oficiales del hecho, pero la historia se recuerda cada año, sobre todo en Día de Muertos, y sirve para recordar que hay que tener cuidado en los cruces del tren.">Leer la leyenda</button>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/ley3.svg" alt="El tesoro de Angelita">
+          <div class="cuerpo">
+            <h3>El tesoro de Angelita</h3>
+            <p style="color:#2a2230">Un tesoro enterrado que no era de oro.</p>
+            <button class="btn-chico" data-modal data-titulo="El tesoro de Angelita" data-img="img/ley3.svg"
+              data-texto="En el barrio del Águila de Oro vivía Angelita, una señora muy querida por su hospitalidad. Cuando murió su esposo, empezó a correr el rumor de que había un tesoro enterrado en la loma cercana a su casa. Mucha gente fue a cavar y se dijo que algunos murieron poco después, así que se habló de una maldición. Tiempo después, los hijos de Angelita recordaron la historia de un columpio que su padre le había instalado a su madre. Al excavar en ese lugar encontraron un cofre, pero no tenía dinero: tenía cartas de amor y fotografías de la familia. Conmovidos, lo volvieron a enterrar. Se dice que el terreno sigue inquietante, con ruidos y presencias que aún se reportan.">Leer la leyenda</button>
+          </div>
+        </article>
+      </div>
+      <p class="nota">Son historias de la tradición oral de Saltillo: existen distintas versiones y no hay registros oficiales de los hechos.</p>
+    </section>
+
+    <!-- MITOS Y CREENCIAS (TABS) -->
+    <section class="seccion reveal" id="mitos">
+      <h2>🌙 Mitos y creencias del Día de Muertos</h2>
+      <div class="tabs-nav">
+        <button class="tab-btn activo" data-tab="m1">El regreso de las almas</button>
+        <button class="tab-btn" data-tab="m2">El camino de pétalos</button>
+        <button class="tab-btn" data-tab="m3">Las velas y la luz</button>
+        <button class="tab-btn" data-tab="m4">La Llorona</button>
+      </div>
+
+      <div class="tab-panel activo" id="m1">
+        <h3>El regreso de las almas</h3>
+        <p>Se cree que el 1 y 2 de noviembre las almas de los difuntos pueden volver a visitar a sus familias.</p>
+        <ul>
+          <li>Por eso se prepara la ofrenda con la comida y la bebida que disfrutaban.</li>
+          <li>Se dice que las almas no se comen la comida, sino que toman su aroma y su esencia.</li>
+          <li>Después de la ofrenda, la familia comparte los alimentos.</li>
+        </ul>
+      </div>
+
+      <div class="tab-panel" id="m2">
+        <h3>El camino de pétalos</h3>
+        <p>El cempasúchil ayuda a las almas a encontrar el camino de regreso.</p>
+        <ul>
+          <li>Se forma un sendero de pétalos desde la calle hasta el altar.</li>
+          <li>Se cree que su color y su aroma intenso guían a los difuntos.</li>
+          <li>También se usa para adornar las tumbas.</li>
+        </ul>
+      </div>
+
+      <div class="tab-panel" id="m3">
+        <h3>Las velas y la luz</h3>
+        <p>La luz tiene un papel muy importante en las creencias de esta fecha.</p>
+        <ul>
+          <li>Las velas iluminan el camino y evitan que las almas se pierdan en la oscuridad.</li>
+          <li>Cada vela puede representar a un difunto en la ofrenda.</li>
+          <li>Se enciende una veladora para cada alma que se espera.</li>
+        </ul>
+      </div>
+
+      <div class="tab-panel" id="m4">
+        <h3>La Llorona</h3>
+        <p>Es una de las leyendas más conocidas de México, que se cuenta en casi todas las regiones.</p>
+        <ul>
+          <li>Habla de una mujer que llora y grita por la noche buscando a sus hijos.</li>
+          <li>Se usa como advertencia para que los niños no anden solos de noche.</li>
+          <li>Cada lugar, incluidos los de Coahuila, tiene su propia versión.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- LÍNEA DE TIEMPO: CÓMO PASAN LAS LEYENDAS -->
+    <section class="seccion seccion-oscura reveal" id="tradicion-oral">
+      <h2>🗣️ Cómo viajan las leyendas</h2>
+      <div class="linea-tiempo">
+        <div class="hito">
+          <span class="fecha">1. Un suceso o una creencia</span>
+          <p>Todo empieza con algo que impresiona a la comunidad: un accidente, una pérdida o un misterio.</p>
+        </div>
+        <div class="hito">
+          <span class="fecha">2. Se cuenta de boca en boca</span>
+          <p>Los abuelos, los vecinos y las familias lo cuentan a los más jóvenes, sobre todo de noche.</p>
+        </div>
+        <div class="hito">
+          <span class="fecha">3. Cambia con cada versión</span>
+          <p>Cada persona le agrega o le quita detalles, por eso hay varias versiones.</p>
+        </div>
+        <div class="hito">
+          <span class="fecha">4. Se vuelve parte del lugar</span>
+          <p>La calle, la casa o las vías del tren se vuelven famosas por la historia.</p>
+        </div>
+        <div class="hito">
+          <span class="fecha">5. Hoy se sigue contando</span>
+          <p>Se recuerdan en recorridos, programas de radio, redes sociales y reuniones familiares en estas fechas.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FUENTES -->
+    <section class="seccion reveal" id="fuentes">
+      <h2>📚 Fuentes consultadas</h2>
+      <ul style="margin-left:22px">
+        <li><a href="https://www.unotv.com/entretenimiento/leyenda-de-la-taconera-en-saltillo-coahuila-el-alma-que-vaga-en-pena/" target="_blank" rel="noopener">UnoTV: La leyenda de La Taconera en Saltillo</a></li>
+        <li><a href="https://www.posta.com.mx/coahuila/la-leyenda-del-nino-del-trenazo-en-saltillo-una-historia-que-sigue-estremeciendo-a-coahuila/vl2106596" target="_blank" rel="noopener">Posta: La leyenda del niño del trenazo en Saltillo</a></li>
+        <li><a href="https://www.posta.com.mx/mexico/leyendas-de-saltillo-el-tesoro-de-angelita/vl1590292" target="_blank" rel="noopener">Posta: Leyendas de Saltillo, el tesoro de Angelita</a></li>
+      </ul>
+      <p class="nota" style="margin-top:12px">Los textos están escritos con palabras propias a partir de estas fuentes. Agrega las tuyas si el maestro las pide.</p>
+    </section>
+  </main>
+
+  <!-- MODAL -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitulo">
+    <div class="modal-caja">
+      <button class="modal-cerrar" id="modalCerrar" aria-label="Cerrar">✕</button>
+      <img id="modalImg" src="" alt="" style="display:none">
+      <div class="modal-texto">
+        <h3 id="modalTitulo"></h3>
+        <p id="modalTexto"></p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer-grande">
+    <div class="footer-cols">
+      <div>
+        <h4>Coahuila 🕯️</h4>
+        <p>Proyecto escolar sobre el Día de Muertos y sus tradiciones en Coahuila.</p>
+      </div>
+      <div>
+        <h4>Páginas</h4>
+        <a href="index.html">Inicio</a>
+        <a href="comidas.html">Comidas típicas</a>
+        <a href="tradiciones.html">Tradiciones y costumbres</a>
+        <a href="fechas.html">Fechas y etapas</a>
+        <a href="arte.html">Arte y decoración</a>
+        <a href="regionales.html">Ofrendas regionales</a>
+        <a href="leyendas.html">Leyendas y mitos</a>
+      </div>
+      <div>
+        <h4>En esta página</h4>
+        <a href="#saltillo">Leyendas de Saltillo</a>
+        <a href="#mitos">Mitos y creencias</a>
+        <a href="#tradicion-oral">Tradición oral</a>
+        <a href="#fuentes">Fuentes</a>
+      </div>
+    </div>
+    <div class="footer-abajo">
+      Proyecto escolar · Las Ofrendas en Coahuila · <span id="anio"></span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/componentes.js"></script>
+</body>
+</html>

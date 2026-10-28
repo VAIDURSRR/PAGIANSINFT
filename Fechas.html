@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fechas y etapas del Día de Muertos · Coahuila</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/componentes.css">
+</head>
+<body>
+
+  <div class="banner-fecha">
+    🌼 Día de Muertos · 1 y 2 de noviembre de 2026 · <span id="cuentaRegresiva"></span> 🕯️
+  </div>
+
+  <header class="encabezado">
+    <a href="index.html" class="logo">Coahuila 🕯️</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
+    <nav class="menu" id="menu">
+      <a href="index.html">Inicio</a>
+      <a href="comidas.html">Comidas típicas</a>
+      <a href="tradiciones.html">Tradiciones</a>
+      <a href="fechas.html">Fechas y etapas</a>
+      <a href="arte.html">Arte y decoración</a>
+      <a href="regionales.html">Ofrendas regionales</a>
+      <a href="leyendas.html">Leyendas y mitos</a>
+      <a href="arte-popular.html">Arte popular</a>
+    </nav>
+  </header>
+
+  <nav class="breadcrumbs" aria-label="Ruta de navegación">
+    <ol>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="tradiciones.html">Tradiciones</a></li>
+      <li aria-current="page">Fechas y etapas del Día de Muertos</li>
+    </ol>
+  </nav>
+
+  <div class="titulo-pagina">
+    <h1>Fechas y etapas del Día de Muertos</h1>
+    <p>Cómo se vive la celebración, día por día, en Coahuila y en todo México.</p>
+  </div>
+
+  <main>
+    <!-- INTRODUCCIÓN -->
+    <section class="seccion reveal" id="introduccion">
+      <h2>📅 Una celebración de varios días</h2>
+      <div class="fila-img">
+        <img src="img/slide1.svg" alt="Ofrendas de Día de Muertos">
+        <div class="texto">
+          <h3>No es solo un día</h3>
+          <p>
+            Aunque las fechas principales son el <strong>1 y el 2 de noviembre</strong>, la celebración comienza
+            unos días antes con los preparativos y, en algunas regiones, con la llegada de las almas de quienes
+            murieron de distintas maneras.
+          </p>
+          <p style="margin-top:10px">
+            Cada familia y cada región tiene sus propias costumbres, por lo que algunas fechas pueden cambiar de
+            un lugar a otro.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- LÍNEA DE TIEMPO DE FECHAS -->
+    <section class="seccion seccion-oscura reveal" id="fechas">
+      <h2>🗓️ Calendario de la celebración</h2>
+      <div class="linea-tiempo">
+        <div class="hito">
+          <span class="fecha">28 de octubre</span>
+          <p>En algunas regiones se recuerda a quienes fallecieron por accidente o de forma repentina.</p>
+        </div>
+        <div class="hito">
+          <span class="fecha">29 y 30 de octubre</span>
+          <p>Según la zona, se recuerda a otras almas, como las que murieron ahogadas o las que no recibieron sepultura. Son los días de más compras: flores, pan, frutas y papel picado.</p>
+        </div>
+        <div class="hito">
+          <span class="fecha">31 de octubre</span>
+          <p>Se termina de armar la ofrenda. En la noche se espera la llegada de las almas de los niños.</p>
+        </div>
+        <div class="hito">
+          <span class="fecha">1 de noviembre</span>
+          <p>Día de Todos los Santos o Día de los Angelitos: se recuerda a los niños fallecidos con dulces, juguetes y atole.</p>
+        </div>
+        <div class="hito">
+          <span class="fecha">2 de noviembre</span>
+          <p>Día de los Fieles Difuntos: llegan las almas de los adultos y se les ofrece su comida y bebida favorita. Las familias visitan el panteón.</p>
+        </div>
+        <div class="hito">
+          <span class="fecha">3 de noviembre en adelante</span>
+          <p>Se despide a las almas, se levanta la ofrenda y la familia comparte el pan y la comida.</p>
+        </div>
+      </div>
+      <p class="nota">Las fechas del 28 al 30 de octubre varían según la región; las del 1 y 2 de noviembre son las más extendidas en todo el país.</p>
+    </section>
+
+    <!-- 1 vs 2 NOVIEMBRE (CARDS + MODAL) -->
+    <section class="seccion reveal" id="principales">
+      <h2>🌼 Las dos fechas principales</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="img/gal3.svg" alt="1 de noviembre">
+          <div class="cuerpo">
+            <h3>1 de noviembre · Los angelitos</h3>
+            <p>Se recuerda a los niños fallecidos.</p>
+            <button class="btn-chico" data-modal data-titulo="1 de noviembre · Los angelitos" data-img="img/gal3.svg"
+              data-texto="Es el día dedicado a los niños que fallecieron. Sus ofrendas llevan dulces, juguetes, atole, pan, frutas y flores blancas. Se cree que las almas de los niños llegan primero y regresan a convivir con su familia.">Ver más</button>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/gal8.svg" alt="2 de noviembre">
+          <div class="cuerpo">
+            <h3>2 de noviembre · Los difuntos</h3>
+            <p>Se recuerda a los adultos fallecidos.</p>
+            <button class="btn-chico" data-modal data-titulo="2 de noviembre · Los difuntos" data-img="img/gal8.svg"
+              data-texto="Es el día dedicado a los adultos que fallecieron. Se coloca su comida y bebida favorita, velas, flores de cempasúchil y fotografías. Muchas familias visitan el panteón para limpiar y adornar las tumbas y convivir en familia.">Ver más</button>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/gal2.svg" alt="La noche de velas">
+          <div class="cuerpo">
+            <h3>La noche del 1 al 2</h3>
+            <p>La noche más especial de la celebración.</p>
+            <button class="btn-chico" data-modal data-titulo="La noche del 1 al 2 de noviembre" data-img="img/gal2.svg"
+              data-texto="En muchos lugares, la noche entre el 1 y el 2 de noviembre es la más especial. Se encienden velas en las casas y en los panteones para iluminar el camino de las almas, y las familias se reúnen a recordar a sus seres queridos.">Ver más</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ETAPAS (TABS) -->
+    <section class="seccion seccion-oscura reveal" id="etapas">
+      <h2>🪜 Etapas de la celebración</h2>
+      <div class="tabs-nav">
+        <button class="tab-btn activo" data-tab="et1">1. Preparación</button>
+        <button class="tab-btn" data-tab="et2">2. Bienvenida</button>
+        <button class="tab-btn" data-tab="et3">3. Convivencia</button>
+        <button class="tab-btn" data-tab="et4">4. Despedida</button>
+      </div>
+
+      <div class="tab-panel activo" id="et1" style="color:#2a2230">
+        <h3>Preparación</h3>
+        <p>Es el tiempo para organizar todo antes de que lleguen las almas.</p>
+        <ul>
+          <li>Se limpia la casa y se arma el altar.</li>
+          <li>Se compran flores de cempasúchil, velas, papel picado y frutas.</li>
+          <li>Se cocinan los platillos favoritos y se hornea el pan de muerto.</li>
+        </ul>
+      </div>
+
+      <div class="tab-panel" id="et2" style="color:#2a2230">
+        <h3>Bienvenida</h3>
+        <p>Se recibe a las almas con luz, aroma y cariño.</p>
+        <ul>
+          <li>Se encienden las velas y el copal o incienso.</li>
+          <li>Se coloca el camino de pétalos de cempasúchil hasta la puerta.</li>
+          <li>Se sirven la comida y el agua para el largo viaje.</li>
+        </ul>
+      </div>
+
+      <div class="tab-panel" id="et3" style="color:#2a2230">
+        <h3>Convivencia</h3>
+        <p>Los vivos y los recuerdos de los difuntos se reúnen.</p>
+        <ul>
+          <li>La familia visita el panteón, limpia y adorna las tumbas.</li>
+          <li>Se cuentan anécdotas y se recuerda a quienes ya no están.</li>
+          <li>Se comparte la comida, el pan y el chocolate o el atole.</li>
+        </ul>
+      </div>
+
+      <div class="tab-panel" id="et4" style="color:#2a2230">
+        <h3>Despedida</h3>
+        <p>Las almas regresan a su descanso hasta el próximo año.</p>
+        <ul>
+          <li>Se apagan las velas y se retira la ofrenda.</li>
+          <li>La comida se comparte entre la familia y los vecinos.</li>
+          <li>Se guarda con cariño lo que servirá para el año siguiente.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ENLACES RELACIONADOS -->
+    <section class="seccion reveal" id="relacionado">
+      <h2>🔗 Sigue explorando</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="img/gal4.svg" alt="Comidas típicas">
+          <div class="cuerpo">
+            <h3>Comidas típicas</h3>
+            <p>Lo que se prepara y se pone en la ofrenda en Coahuila.</p>
+            <a class="btn-chico" href="comidas.html" style="text-decoration:none">Ir a comidas</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/gal5.svg" alt="Tradiciones y costumbres">
+          <div class="cuerpo">
+            <h3>Tradiciones y costumbres</h3>
+            <p>Noticias, galería y la línea del tiempo de Saltillo.</p>
+            <a class="btn-chico" href="tradiciones.html" style="text-decoration:none">Ir a tradiciones</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAL -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitulo">
+    <div class="modal-caja">
+      <button class="modal-cerrar" id="modalCerrar" aria-label="Cerrar">✕</button>
+      <img id="modalImg" src="" alt="" style="display:none">
+      <div class="modal-texto">
+        <h3 id="modalTitulo"></h3>
+        <p id="modalTexto"></p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer-grande">
+    <div class="footer-cols">
+      <div>
+        <h4>Coahuila 🕯️</h4>
+        <p>Proyecto escolar sobre el Día de Muertos y sus tradiciones en Coahuila.</p>
+      </div>
+      <div>
+        <h4>Páginas</h4>
+        <a href="index.html">Inicio</a>
+        <a href="comidas.html">Comidas típicas</a>
+        <a href="tradiciones.html">Tradiciones y costumbres</a>
+        <a href="fechas.html">Fechas y etapas</a>
+      </div>
+      <div>
+        <h4>En esta página</h4>
+        <a href="#fechas">Calendario</a>
+        <a href="#principales">Fechas principales</a>
+        <a href="#etapas">Etapas</a>
+      </div>
+    </div>
+    <div class="footer-abajo">
+      Proyecto escolar · Las Ofrendas en Coahuila · <span id="anio"></span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/componentes.js"></script>
+</body>
+</html>

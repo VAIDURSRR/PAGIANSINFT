@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ofrendas regionales · Coahuila y México</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/componentes.css">
+</head>
+<body>
+
+  <div class="banner-fecha">
+    🌼 Día de Muertos · 1 y 2 de noviembre de 2026 · <span id="cuentaRegresiva"></span> 🕯️
+  </div>
+
+  <header class="encabezado">
+    <a href="index.html" class="logo">Coahuila 🕯️</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
+    <nav class="menu" id="menu">
+      <a href="index.html">Inicio</a>
+      <a href="comidas.html">Comidas típicas</a>
+      <a href="tradiciones.html">Tradiciones</a>
+      <a href="fechas.html">Fechas y etapas</a>
+      <a href="arte.html">Arte y decoración</a>
+      <a href="regionales.html">Ofrendas regionales</a>
+      <a href="leyendas.html">Leyendas y mitos</a>
+      <a href="arte-popular.html">Arte popular</a>
+    </nav>
+  </header>
+
+  
+
+  <nav class="breadcrumbs" aria-label="Ruta de navegación">
+    <ol>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="tradiciones.html">Tradiciones</a></li>
+      <li aria-current="page">Ofrendas regionales</li>
+    </ol>
+  </nav>
+
+  <div class="titulo-pagina">
+    <h1>Ofrendas regionales</h1>
+    <p>Cada región recuerda a sus difuntos a su manera. Conoce las de Coahuila y las de otros lugares de México.</p>
+  </div>
+
+  <main>
+    <!-- INTRODUCCIÓN -->
+    <section class="seccion reveal" id="introduccion">
+      <h2>🗺️ Una tradición, muchas formas</h2>
+      <div class="fila-img">
+        <img src="img/slide1.svg" alt="Ofrendas de distintas regiones">
+        <div class="texto">
+          <h3>La ofrenda cambia según el lugar</h3>
+          <p>
+            Aunque en todo México se recuerda a los difuntos, cada región adapta la ofrenda con sus
+            <strong>ingredientes, su clima, su historia y sus creencias</strong>. Por eso no hay dos altares
+            iguales: lo que se pone en la costa no es lo mismo que en el desierto o en la sierra.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- REGIONES DE COAHUILA (TABS) -->
+    <section class="seccion seccion-oscura reveal" id="coahuila">
+      <h2>📍 Las regiones de Coahuila</h2>
+      <p class="intro">Coahuila se divide en seis regiones. Estos son sus rasgos generales y lo que puede inspirar sus ofrendas.</p>
+
+      <div class="tabs-nav">
+        <button class="tab-btn activo" data-tab="r1">Sureste</button>
+        <button class="tab-btn" data-tab="r2">Laguna</button>
+        <button class="tab-btn" data-tab="r3">Carbonífera</button>
+        <button class="tab-btn" data-tab="r4">Centro-Desierto</button>
+        <button class="tab-btn" data-tab="r5">Norte</button>
+        <button class="tab-btn" data-tab="r6">Cinco Manantiales</button>
+      </div>
+
+      <div class="tab-panel activo" id="r1" style="color:#2a2230">
+        <h3>Sureste · Saltillo, Arteaga, Ramos Arizpe, Parras</h3>
+        <p>Es la región de la capital del estado, con una fuerte herencia tlaxcalteca y española.</p>
+        <ul>
+          <li>Los textiles, como el sarape de Saltillo, pueden decorar el altar.</li>
+          <li>El pan de pulque y los dulces de nuez acompañan las ofrendas.</li>
+          <li>Las familias visitan los panteones y se reúnen a convivir.</li>
+        </ul>
+      </div>
+
+      <div class="tab-panel" id="r2" style="color:#2a2230">
+        <h3>Laguna · Torreón, Matamoros, San Pedro, Francisco I. Madero</h3>
+        <p>Región agrícola e industrial, compartida con Durango.</p>
+        <ul>
+          <li>Productos del campo, como frutas, nuez y lácteos, pueden formar parte del altar.</li>
+          <li>Las ofrendas de escuelas y plazas públicas son muy visitadas.</li>
+        </ul>
+      </div>
+
+      <div class="tab-panel" id="r3" style="color:#2a2230">
+        <h3>Carbonífera · Sabinas, Múzquiz, San Juan de Sabinas</h3>
+        <p>Región marcada por la minería del carbón.</p>
+        <ul>
+          <li>Las familias suelen recordar con especial cariño a los mineros fallecidos.</li>
+          <li>Pueden incluirse herramientas, cascos y objetos del trabajo en el altar.</li>
+        </ul>
+      </div>
+
+      <div class="tab-panel" id="r4" style="color:#2a2230">
+        <h3>Centro-Desierto · Monclova, Frontera, Cuatro Ciénegas</h3>
+        <p>Combina zona industrial y paisajes de desierto.</p>
+        <ul>
+          <li>Se aprovechan plantas y materiales del semidesierto en la decoración.</li>
+          <li>Las familias comparten platillos norteños después de la ofrenda.</li>
+        </ul>
+      </div>
+
+      <div class="tab-panel" id="r5" style="color:#2a2230">
+        <h3>Norte · Acuña, Piedras Negras, Nava</h3>
+        <p>Región fronteriza, con influencia de la cultura del norte y de la frontera con Estados Unidos.</p>
+        <ul>
+          <li>Se mezclan tradiciones mexicanas con costumbres propias de la frontera.</li>
+          <li>La carne asada y los platillos del norte pueden estar presentes en la convivencia familiar.</li>
+        </ul>
+      </div>
+
+      <div class="tab-panel" id="r6" style="color:#2a2230">
+        <h3>Cinco Manantiales · Allende, Nava, Zaragoza, Morelos</h3>
+        <p>Zona de pueblos pequeños y tradición familiar.</p>
+        <ul>
+          <li>Las ofrendas suelen ser más familiares y sencillas.</li>
+          <li>Los vecinos y parientes se reúnen en los panteones para recordar juntos.</li>
+        </ul>
+      </div>
+      <p class="nota">Cada familia y cada comunidad tiene sus propias costumbres: estos son rasgos generales, no reglas.</p>
+    </section>
+
+    <!-- OTRAS REGIONES DE MÉXICO (CARDS CON MODAL) -->
+    <section class="seccion reveal" id="mexico">
+      <h2>🇲🇽 Ofrendas famosas de México</h2>
+      <p class="intro">Algunas de las celebraciones más conocidas del país. Toca "Ver más" para conocerlas.</p>
+
+      <div class="cards">
+        <article class="card">
+          <img src="img/reg1.svg" alt="Oaxaca">
+          <div class="cuerpo">
+            <h3>Oaxaca</h3>
+            <p>Altares, comparsas y panteones llenos de flores.</p>
+            <button class="btn-chico" data-modal data-titulo="Oaxaca" data-img="img/reg1.svg"
+              data-texto="En Oaxaca las ofrendas incluyen mole, chocolate, pan de yema, flores y velas. Hay comparsas que recorren las calles, y los panteones se llenan de familias que pasan la noche junto a sus difuntos.">Ver más</button>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/reg2.svg" alt="Michoacán">
+          <div class="cuerpo">
+            <h3>Michoacán · Janitzio</h3>
+            <p>La noche de muertos en el lago de Pátzcuaro.</p>
+            <button class="btn-chico" data-modal data-titulo="Michoacán · Janitzio" data-img="img/reg2.svg"
+              data-texto="En la región del lago de Pátzcuaro, como la isla de Janitzio, las comunidades purépechas velan a sus difuntos en los panteones con velas y flores durante la noche del 1 al 2 de noviembre. Es una de las celebraciones más conocidas del país.">Ver más</button>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/reg3.svg" alt="Yucatán">
+          <div class="cuerpo">
+            <h3>Yucatán · Hanal Pixán</h3>
+            <p>La "comida de las ánimas" maya.</p>
+            <button class="btn-chico" data-modal data-titulo="Yucatán · Hanal Pixán" data-img="img/reg3.svg"
+              data-texto="Hanal Pixán significa 'comida de las ánimas' en lengua maya. Se preparan platillos especiales, como el mucbipollo, un gran tamal horneado en pib, es decir, bajo la tierra, que se ofrece a los difuntos.">Ver más</button>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/reg4.svg" alt="Huasteca">
+          <div class="cuerpo">
+            <h3>Huasteca · Xantolo</h3>
+            <p>Arcos de flores, danzas y comparsas.</p>
+            <button class="btn-chico" data-modal data-titulo="Huasteca · Xantolo" data-img="img/reg4.svg"
+              data-texto="En la Huasteca, que abarca zonas de San Luis Potosí, Hidalgo y Veracruz, la fiesta se llama Xantolo. Se arman altares con arcos de flores y hay danzas y disfraces que acompañan la celebración.">Ver más</button>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/reg5.svg" alt="Mixquic">
+          <div class="cuerpo">
+            <h3>Mixquic · Ciudad de México</h3>
+            <p>La famosa "alumbrada" en el panteón.</p>
+            <button class="btn-chico" data-modal data-titulo="Mixquic · Ciudad de México" data-img="img/reg5.svg"
+              data-texto="San Andrés Mixquic, en la alcaldía de Tláhuac, es conocido por su celebración de Día de Muertos. Las familias llenan el panteón de velas y flores durante la noche, en lo que se conoce como la alumbrada.">Ver más</button>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/reg6.svg" alt="Aguascalientes">
+          <div class="cuerpo">
+            <h3>Aguascalientes · Calaveras</h3>
+            <p>La tierra del grabador José Guadalupe Posada.</p>
+            <button class="btn-chico" data-modal data-titulo="Aguascalientes · Calaveras" data-img="img/reg6.svg"
+              data-texto="Aguascalientes es la tierra de José Guadalupe Posada, creador de la famosa Calavera Garbancera, que después se convirtió en la Catrina. Cada año se celebra el Festival de Calaveras con desfiles, exposiciones y arte popular.">Ver más</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- COMPARATIVA -->
+    <section class="seccion seccion-oscura reveal" id="comparativa">
+      <h2>🔍 ¿Qué cambia y qué se parece?</h2>
+      <div class="fila-img">
+        <img src="img/reg7.svg" alt="Coahuila">
+        <div class="texto">
+          <h3 style="color:var(--naranja-claro)">Lo que cambia</h3>
+          <p>
+            Los <strong>platillos</strong>, las <strong>flores</strong>, los <strong>adornos</strong>, la manera de
+            visitar el panteón y el idioma o las danzas con las que se celebra. En el sur del país es común el
+            mole y los tamales; en el norte, la carne y los productos del campo y del desierto.
+          </p>
+        </div>
+      </div>
+      <div class="fila-img invertida">
+        <img src="img/reg8.svg" alt="Lo que se parece">
+        <div class="texto">
+          <h3 style="color:var(--naranja-claro)">Lo que se parece</h3>
+          <p>
+            En todos lados hay <strong>flores, velas, comida, fotografías</strong> y, sobre todo, la intención de
+            recordar a los seres queridos con cariño. Eso es lo que une a todas las ofrendas del país.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- LÍNEA DE TIEMPO CORTA: CÓMO CONOCER LAS OFRENDAS -->
+    <section class="seccion reveal" id="visitar">
+      <h2>🧭 Para seguir explorando</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="img/gal3.svg" alt="Comidas">
+          <div class="cuerpo">
+            <h3>Comidas típicas</h3>
+            <p>Lo que se pone en la ofrenda en Coahuila.</p>
+            <a class="btn-chico" href="comidas.html" style="text-decoration:none">Ir a comidas</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/slide6.svg" alt="Arte y decoración">
+          <div class="cuerpo">
+            <h3>Arte y decoración</h3>
+            <p>Papel picado, flores, catrinas y artesanías.</p>
+            <a class="btn-chico" href="arte.html" style="text-decoration:none">Ir a arte</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/gal2.svg" alt="Fechas">
+          <div class="cuerpo">
+            <h3>Fechas y etapas</h3>
+            <p>El calendario de la celebración.</p>
+            <a class="btn-chico" href="fechas.html" style="text-decoration:none">Ir a fechas</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAL -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitulo">
+    <div class="modal-caja">
+      <button class="modal-cerrar" id="modalCerrar" aria-label="Cerrar">✕</button>
+      <img id="modalImg" src="" alt="" style="display:none">
+      <div class="modal-texto">
+        <h3 id="modalTitulo"></h3>
+        <p id="modalTexto"></p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer-grande">
+    <div class="footer-cols">
+      <div>
+        <h4>Coahuila 🕯️</h4>
+        <p>Proyecto escolar sobre el Día de Muertos y sus tradiciones en Coahuila.</p>
+      </div>
+      <div>
+        <h4>Páginas</h4>
+        <a href="index.html">Inicio</a>
+        <a href="comidas.html">Comidas típicas</a>
+        <a href="tradiciones.html">Tradiciones y costumbres</a>
+        <a href="fechas.html">Fechas y etapas</a>
+        <a href="arte.html">Arte y decoración</a>
+        <a href="regionales.html">Ofrendas regionales</a>
+      </div>
+      <div>
+        <h4>En esta página</h4>
+        <a href="#coahuila">Regiones de Coahuila</a>
+        <a href="#mexico">Ofrendas de México</a>
+        <a href="#comparativa">Qué cambia y qué se parece</a>
+      </div>
+    </div>
+    <div class="footer-abajo">
+      Proyecto escolar · Las Ofrendas en Coahuila · <span id="anio"></span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/componentes.js"></script>
+</body>
+</html>
